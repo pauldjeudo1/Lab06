@@ -3,7 +3,6 @@ package com.mycompany.shapeexample;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -12,6 +11,7 @@ import javafx.scene.shape.Circle;
 
 /**
  * JavaFX App
+ * GitHub link:
  */
 public class App extends Application {
 
@@ -57,8 +57,7 @@ public class App extends Application {
 
         Pane root = new Pane();
         root.getChildren().addAll(blackCircle, r1, r2, r3, line1, line2, line3, line4);
-        
-        Scene scene = new Scene(root, 540, 540);
+        Scene scene = new Scene(root, SCENE_WIDTH, SCENE_HEIGHT);
         stage.setScene(scene);
         stage.setTitle("Using Circle");
         stage.show();	

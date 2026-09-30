@@ -50,15 +50,15 @@ public class App extends Application {
         r3.setY(Y3);
         r3.setStroke(Color.BLACK);
         
-//        Line line1 = new Line(X1, Y1, X3, Y3); 
-//        Line line2 = new Line();
-//        Line line3 = new Line();
-//        Line line4 = new Line();
+        Line line1 = new Line(X1, Y1, X3, Y3); 
+        Line line2 = new Line(X1 + WIDTH1, Y1, X3 + WIDTH3, Y3);
+        Line line3 = new Line(X1, Y1 + HEIGHT1, X3, Y3 + HEIGHT3);
+        Line line4 = new Line(X1 + WIDTH1, Y1 + HEIGHT1, X3 + WIDTH3, Y3 + HEIGHT3);
 
         Pane root = new Pane();
-        root.getChildren().addAll(blackCircle, r1, r2, r3);
+        root.getChildren().addAll(blackCircle, r1, r2, r3, line1, line2, line3, line4);
         
-        Scene scene = new Scene(root, 300, 200);
+        Scene scene = new Scene(root, 540, 540);
         stage.setScene(scene);
         stage.setTitle("Using Circle");
         stage.show();	
